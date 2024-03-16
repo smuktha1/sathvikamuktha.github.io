@@ -1,0 +1,27 @@
+body{
+    background-color: blueviolet;
+    text-align: center;
+    color: darkcyan;
+    font-family: monospace;
+}
+
+a{
+    color: pink;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(0, 128, 107);
+    text-decoration: line;
+}
+main {
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+h2{
+    text-align:center;
+}
+
+figure{
+    width: 20%;
+}
