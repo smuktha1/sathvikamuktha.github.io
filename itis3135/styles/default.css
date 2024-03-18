@@ -1,16 +1,16 @@
 body{
-    background-color: blueviolet;
+    background-color: rgb(255, 211, 218);
     text-align: center;
-    color: darkcyan;
+    color: rgba(117, 6, 117, 0.575);
     font-family: monospace;
 }
 
 a{
-    color: pink;
+    color: rgba(59, 123, 186, 0.673);
     text-decoration: none;
 }
 a:hover {
-    color: rgb(0, 128, 107);
+    color: blueviolet;
     text-decoration: line;
 }
 main {
@@ -22,6 +22,11 @@ h2{
     text-align:center;
 }
 
+img{
+    width: 70%;
+}
 figure{
-    width: 20%;
+    text-align: center;
+    font-style:italic;
+
 }
