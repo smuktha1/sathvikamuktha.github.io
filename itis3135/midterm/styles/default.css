@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: beige;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: darkblue;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+}
+a{
+    color: pink;
+    text-decoration: none;
+}
+main {
+    padding: 20px;
+}
+a:hover {
+    color: green;
+    text-decoration: line;
+}
+
+/* Sections */
+section {
+    margin-bottom: 20px;
+}
+section h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
