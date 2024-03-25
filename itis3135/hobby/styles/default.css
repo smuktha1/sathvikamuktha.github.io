@@ -1,12 +1,15 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: beige;
+    background-color: rgba(123, 194, 241, 0.758);
     margin: 0;
     padding: 0;
+    text-align: center;
+    color: rgba(117, 6, 117, 0.575);
+    font-family: monospace;
 }
 header {
-    background-color: darkblue;
-    color: #fff;
+    background-color: rgba(32, 32, 215, 0.761);
+    color: rgb(37, 209, 189);
     padding: 20px;
     text-align: center;
 }
@@ -14,7 +17,7 @@ header h1 {
     margin: 0;
 }
 a{
-    color: pink;
+    color: rgb(241, 44, 77);
     text-decoration: none;
 }
 main {
