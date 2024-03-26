@@ -6,6 +6,7 @@ body {
     text-align: center;
     color:  #003B73;
     font-family: monospace;
+    font-size:15px;
 }
 header {
     background-color: #0074B7;
@@ -16,6 +17,16 @@ header {
 header h1 {
     margin: 0;
 }
+h1 {
+    font-size: 35px;
+}
+h2{
+    font-size: 25px;
+}
+h3{
+    font-size:18px;
+}
+
 
 a{
     color: #75E6DA;
