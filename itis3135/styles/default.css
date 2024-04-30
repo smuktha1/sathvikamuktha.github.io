@@ -54,19 +54,19 @@ th{
 
 /* Form Styling */
 .divider {
-    border: 6px double rgb(161, 44, 157);
+    border: 4px double rgb(161, 44, 157);
 }
 input[type="text"],
 input[type="tel"],
 input[type="email"],
 select {
   padding: 3px;
-  margin: 5px;
+  margin: 10px;
   border: 2px solid rgb(161, 44, 157);
   border-radius: 4px;
 }
 form {
-    padding: 10px;
+    padding: 1px;
 }
 
 input[type="submit"],
@@ -75,10 +75,9 @@ input[type="reset"] {
   color: #fff;
   padding: 12px 30px;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
 }
-
 input[type="submit"]:hover,
 input[type="reset"]:hover {
   background-color: rgba(106, 58, 228, 0.742);
