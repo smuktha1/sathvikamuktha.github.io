@@ -49,3 +49,30 @@ th{
     background-color: rgba(251, 74, 104, 0.851);
     color: darkblue;
 }
+
+/* Form Styling */
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid rgb(228, 58, 86);
+  border-radius: 4px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  background-color: rgba(254, 61, 61, 0.825);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: rgb(228, 58, 86);
+}
