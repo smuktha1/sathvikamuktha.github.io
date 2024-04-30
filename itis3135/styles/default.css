@@ -21,6 +21,9 @@ main {
 h2{
     text-align:center;
 }
+h3{
+    text-align:center;
+}
 
 img{
     width: 70%;
@@ -29,4 +32,20 @@ figure{
     text-align: center;
     font-style:italic;
 
+}
+table{
+    border-style: solid;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}  
+th, td {
+    
+    text-align: left;
+    padding: 10px;
+    border: 2px solid black;
+}
+th{
+    background-color: rgba(251, 74, 104, 0.851);
+    color: darkblue;
 }
