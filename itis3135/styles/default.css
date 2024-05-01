@@ -51,6 +51,13 @@ th{
     background-color: rgba(255, 141, 160, 0.691);
     color: darkblue;
 }
+tr:nth-child(even) {
+    background-color:  rgba(126, 23, 142, 0.544);
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(194, 87, 210, 0.754);
+}
 
 /* Form Styling */
 .divider {
