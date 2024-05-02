@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sathvika Muktha's Sagacious Mermaid ITIS 3135 First Scripts</title>
+  <link rel= "stylesheet" href="styles/default.css">
+  <script src="scripts/defaultscripts.js"></script>
+</head>
+
+<body>
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+  <main>
+    <h2>First Scripts</h2>
+    <h3>Today is <span id="current-time"></span> </h3>
+
+    <form id="user-info">
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name">
+    <label for="mood">How are you feeling?</label>
+    <input type="text" id="mood" placeholder="Enter your mood">
+    <button onclick="greetUser()">Submit</button>
+    <p id="greeting"></p>
+    </form>
+</main>   
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/defaultScript.js"></script>
+    <script>
+      document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+           document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+   </script>
+   <script src="scripts/HTMLInclude.min.js"></script>
+    <script>scriptTest()</script>
+</body>
+</html>
