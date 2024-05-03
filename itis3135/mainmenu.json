@@ -1,0 +1,15 @@
+[
+    {"name": "Home", "url": "index.html"},
+    {"name": "Introduction", "url": "introduction.html"},
+    {"name": "Contract", "url": "contract.html"},
+    {"name": "Table", "url": "tables.html"},
+    {"name": "Form", "url": "forms.html"},
+    {"name": "Web Evaluations", "url": "web_evaluations.html"},
+    {"name": "First Scripts", "url": "firstScript.html"},
+    {"name": "About", "url": "about.html"},
+    {"name": "BYO Introduction", "url": "byo_intro.html"},
+    {"name": "CalculatorTry", "url": "calculator_try.html"},
+    {"name": "Calculator fCC", "url": "calculator_fcc.html"},
+    {"name": "Array", "url": "arrays.html"},
+    {"name": "Drawing", "url": "drawing.html"}
+]
