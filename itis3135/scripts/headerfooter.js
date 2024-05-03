@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
             });
 
             // Add the footer content
-            const footerContent = `<p> Page Designed By <a href="https://www.PatelEnterprise.com/index.html">Patel Enterprise</a> © 2023, <a href="https://www.freecodecamp.org/certification/kpate222/responsive-web-design">Certified in RWD</a>, <a href="https://www.freecodecamp.org/certification/kpate222/javascript-algorithms-and-data-structures-v8"> Certified in JS </a></p>`;
+            const footerContent = `<p>Page Built by <a href="smukthastudios.com.html">Sathvika Muktha</a> &copy;2024 <a href="https://www.freecodecamp.org/certification/smuktha/responsive-web-design">Certified in RWD</a>, <a href="https://www.freecodecamp.org/certification/smuktha/javascript-algorithms-and-data-structures-v8">Certified in JS</a></p>`;
             footerContainer.innerHTML += footerContent;
         })
         .catch(error => console.error("Error fetching footer menu:", error));
@@ -45,13 +45,6 @@ document.addEventListener("DOMContentLoaded", function() {
         menuItem.classList.add("menu-item");
         menuItem.textContent = item.name;
         menuItem.href = item.url;
-
-        // Create and append the favicon
-        const favicon = document.createElement("img");
-        favicon.src = "images/bear.png";
-        favicon.alt = "Favicon";
-        favicon.classList.add("favicon");
-        menuItem.appendChild(favicon);
 
         return menuItem;
     }
