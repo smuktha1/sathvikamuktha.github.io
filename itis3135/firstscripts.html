@@ -13,10 +13,10 @@
   <header>
     <div data-include="components/header.html"></div>
   </header>
+
   <main>
     <h2>First Scripts</h2>
     <h3>Today is <span id="current-time"></span> </h3>
-
     <form id="user-info">
 
     <label for="name">Name:</label>
@@ -26,9 +26,42 @@
     <button onclick="greetUser()">Submit</button>
     <p id="greeting"></p>
     </form>
-</main>   
 
-    <footer>
+    <label for="favorite-number">Enter your favorite number (0 to 10):</label>
+    <input type="number" id="favorite-number" min="1" max="10">
+    <button class="fbuttons" onclick="showPolygonName()">Submit</button>
+    <p id="inputText"></p>
+
+    <h4>Do you believe that mermaids exist? (yes or no)</h4>
+        <input id="mermaid">
+        <button type="button" onclick = "mermaid()">Submit</button>
+        <p id="answerMermaid"></p>
+
+    <div class="buttons">
+      <button class="fbuttons" onclick="generateCompliment()">Compliment Generator</button>
+    </div>
+    <p id="inputText1"></p>
+
+    <button onclick="randomFact()">Radom Facts</button>
+    <h4 id="randomFact"></h4>
+    <p id="inputText"></p>
+
+    <button onclick="randomMermaidFact()">Magical powers of Mermaids!</button>
+    <h4 id="randomMermaidFact"></h4>
+    <p id="inputText"></p>
+
+    <button onclick="sayGoodbye()">Say Good Bye</button>
+    <h4 id="goodBye"></h4>
+    <p id="inputText"></p>
+
+    
+
+
+  
+
+  </main>
+  
+  <footer>
         <div data-include="components/footer.html"></div>
     </footer>
     <script src="scripts/defaultScript.js"></script>
