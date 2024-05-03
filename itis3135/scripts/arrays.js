@@ -1,87 +1,96 @@
-let people = [];
-let salaries = [];
-let select = document.getElementById("namesArray");
+const person = [];
+const salary = [];
+document.getElementById("addSalary").addEventListener("click", addSalary);
+document.getElementById("modifySalary").addEventListener("click", modifySalary);
+document.getElementById("displayResults").addEventListener("click", displayResults);
+document.getElementById("displaySalary").addEventListener("click", displaySalary);
 
-function addSalary() {
-    let name = document.getElementById("name").value.trim();
-    let salary = document.getElementById("addSalaryBox").value.trim();
+function addSalary(){
 
-    if (name === "" || isNaN(salary) || salary === "") {
-        alert("Please enter a valid name and salary.");
+    let personName = document.getElementById("personName").value;
+    let salaryAmount = parseFloat(document.getElementById("salaryAmount").value);
+    let display = document.getElementById("display");
+  
+    if (!personName.trim() || isNaN(salaryAmount)) {
+        alert("Please enter a valid name and a numeric salary amount");
         return;
     }
 
-    people.push(name);
-    salaries.push(parseFloat(salary));
-
-    document.getElementById("name").value = "";
-    document.getElementById("addSalaryBox").value = "";
-    document.getElementById("name").focus();
-    populateNamesDropdown(); 
+    person.push(personName);
+    salary.push(salaryAmount);
+  
+    document.getElementById("personName").value = "";
+    document.getElementById("salaryAmount").value = "";
+  
+    display.innerHTML = "<h2>Here are the names and corresponding salaries:</h2>";
+    person.forEach((personEntry, index) => {
+      display.innerHTML += `<p>Name: ${personEntry}   ||   Salary: $${salary[index]}</p>`;
+    });
+  
 }
+
 
 function modifySalary() {
-    let index = document.getElementById("namesArray").selectedIndex;
-    let newSalary = parseFloat(document.getElementById("modifySalaryBox").value.trim());
+     let selectEmployee = document.createElement("select");
+     selectEmployee.id = "selectEmployee";
+     person.forEach((personEntry, index) => {
+     let option = document.createElement("option");
+     option.value = index;
+     option.text = personEntry;
+     selectEmployee.appendChild(option);
+     });
+    
+     let newSalaryInput = document.createElement("input");
+     newSalaryInput.type = "text";
+     newSalaryInput.id = "newSalary";
+     newSalaryInput.placeholder = "Enter new salary";
+    
+     let submitButton = document.createElement("button");
+     submitButton.innerHTML = "Submit";
+     submitButton.addEventListener("click", function() {
+     let selectedIndex = document.getElementById("selectEmployee").value;
+     let newSalaryValue = parseFloat(document.getElementById("newSalary").value);
+     salary[selectedIndex] = newSalaryValue;
+     display.innerHTML = "<h2>Here are the names and corresponding salaries after modification:</h2>";
+            person.forEach((personEntry, index) => {
+            display.innerHTML += `<p>Name: ${personEntry}  ||  Salary: $${salary[index]}</p>`;
+     });
+     document.getElementById("newSalary").value = "";
+     });
 
-    if (index === -1 || isNaN(newSalary) || newSalary === "") {
-        alert("Please select an employee and enter a valid salary.");
-        return;
-    }
-
-    salaries[index] = newSalary;
-
-    document.getElementById("modifySalaryBox").value = "";
+    let modifySalaryDiv = document.getElementById("modifySalaryDiv");
+    modifySalaryDiv.innerHTML = "";
+    modifySalaryDiv.appendChild(selectEmployee);
+    modifySalaryDiv.appendChild(newSalaryInput);
+    modifySalaryDiv.appendChild(submitButton);
 }
+
+
 
 function displayResults() {
-    if (salaries.length === 0) {
-        alert("No salaries added yet.");
-        return;
+    let totalSalary = 0;
+    let highestSalary = -Infinity;
+    for (let i = 0; i < salary.length; i++) {
+        totalSalary += salary[i];
+        if (salary[i] > highestSalary) {
+            highestSalary = salary[i];
+        }
     }
+    let averageSalary = totalSalary / salary.length;
 
-    let totalSalary = salaries.reduce((acc, curr) => acc + curr, 0);
-    let averageSalary = totalSalary / salaries.length;
-    let highestSalary = Math.max(...salaries);
-
-    document.getElementById("results").innerHTML = `
-        <h2>Results</h2>
-        <p>Average Salary: ${averageSalary.toFixed(2)}</p>
-        <p>Highest Salary: ${highestSalary.toFixed(2)}</p>
-    `;
+    let resultsDiv = document.getElementById("results");
+    resultsDiv.innerHTML = "<h2>Results</h2>";
+    resultsDiv.innerHTML += `<p>Average Salary: $${averageSalary.toFixed(2)}</p>`;
+    resultsDiv.innerHTML += `<p>Highest Salary: $${highestSalary.toFixed(2)}</p>`;
 }
+
+
 
 function displaySalary() {
-    if (people.length === 0) {
-        alert("No salaries added yet.");
-        return;
+    let table = "<h2>Table</h2><table><tr><th>Name || </th><th>Salary</th></tr>";
+    for (let i = 0; i < person.length; i++) {
+        table += `<tr><td>${person[i]}   </td><td>$${salary[i]}</td></tr>`;
     }
-
-    let tableBody = document.getElementById("results_table").getElementsByTagName("tbody")[0];
-    tableBody.innerHTML = "";
-
-    for (let i = 0; i < people.length; i++) {
-        let row = tableBody.insertRow();
-        let nameCell = row.insertCell(0);
-        let salaryCell = row.insertCell(1);
-        nameCell.textContent = people[i];
-        salaryCell.textContent = salaries[i].toFixed(2);
-    }
-
-    document.getElementById("results_table").style.display = "block";
+    table += "</table>";
+    document.getElementById("results_table").innerHTML = table;
 }
-
-function populateNamesDropdown() {
-    select.innerHTML = "";
-
-    for (let i = 0; i < people.length; i++) {
-        let option = document.createElement("option");
-        option.textContent = people[i];
-        option.value = i;
-        select.appendChild(option);
-    }
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("name").focus();
-});

@@ -16,44 +16,23 @@
   </header>
   <main>
     <h2>Arrays</h2>
-    <div class="array_buttons">
-        <fieldset class="array_blocks">
-            <legend>Click button to add a salary to an employee:</legend>
-            <input type="text" id="name" placeholder="Name">
-            <input type="number" id="addSalaryBox" placeholder="Salary">
-            <input type="button" value="Add to Salary" onclick="addSalary()">
-        </fieldset>
-        
-        <fieldset class="array_blocks">
-            <legend>Click button to modify salary:</legend>
-            <select class="namesArray" id="namesArray"></select>
-            <input type="number" id="modifySalaryBox" placeholder="New Salary">
-            <input type="button" value="Modify Salary" onclick="modifySalary()">
-        </fieldset>
-        
-        <fieldset class="array_blocks">
-            <legend>Click button to display combined and highest salaries:</legend>
-            <input type="button" value="Display Results" onclick="displayResults()">
-            <div id="results"></div>
-        </fieldset>
-        
-        <fieldset class="array_blocks">
-            <legend>Click button to display salary table:</legend>
-            <input type="button" value="Display Salary" onclick="displaySalary()">
-        </fieldset>
 
-        <section class="array_table">
-            <table id="results_table" style="display:none">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Salary</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
-        </section>
-    </div>
+    <label for="personName">Name: </label> 
+    <input type="text" id="personName"> <br>
+
+    <label for="salaryAmount">Salary: </label>
+    <input type="text" id="salaryAmount"> <br>
+
+    <button id="addSalary">Add Salary</button> <br>
+
+    <div id="modifySalaryDiv"></div>
+    <button id="modifySalary" onclick="modifySalary()">Modify Salary</button>
+    <button id="displayResults" onclick="displayResults()">Display Results</button>
+    <button id="displaySalary" onclick="displaySalary()">Display Salary</button>
+
+    <div id="display"></div>
+    <div id="results"></div>
+    <div id="results_table"></div>
 </main>
 
     <footer>
