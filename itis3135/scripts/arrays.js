@@ -87,7 +87,7 @@ function displayResults() {
 
 
 function displaySalary() {
-    let table = "<h2>Table</h2><table><tr><th>Name || </th><th>Salary</th></tr>";
+    let table = "<h2>Table</h2><table><tr><th>Name  </th><th>Salary</th></tr>";
     for (let i = 0; i < person.length; i++) {
         table += `<tr><td>${person[i]}   </td><td>$${salary[i]}</td></tr>`;
     }
