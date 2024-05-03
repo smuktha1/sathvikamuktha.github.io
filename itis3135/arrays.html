@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sathvika Muktha's Sagacious Mermaid ITIS3135 Arrays</title>
+  <link rel="stylesheet" href="styles/default.css">
+</head>
+
+<body>
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+  <main>
+    <h2>Arrays</h2>
+    <div class="array_buttons">
+        <fieldset class="array_blocks">
+            <legend>Click button to add a salary to an employee:</legend>
+            <input type="text" id="name" placeholder="Name">
+            <input type="number" id="addSalaryBox" placeholder="Salary">
+            <input type="button" value="Add to Salary" onclick="addSalary()">
+        </fieldset>
+        
+        <fieldset class="array_blocks">
+            <legend>Click button to modify salary:</legend>
+            <select class="namesArray" id="namesArray"></select>
+            <input type="number" id="modifySalaryBox" placeholder="New Salary">
+            <input type="button" value="Modify Salary" onclick="modifySalary()">
+        </fieldset>
+        
+        <fieldset class="array_blocks">
+            <legend>Click button to display combined and highest salaries:</legend>
+            <input type="button" value="Display Results" onclick="displayResults()">
+            <div id="results"></div>
+        </fieldset>
+        
+        <fieldset class="array_blocks">
+            <legend>Click button to display salary table:</legend>
+            <input type="button" value="Display Salary" onclick="displaySalary()">
+        </fieldset>
+
+        <section class="array_table">
+            <table id="results_table" style="display:none">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Salary</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </div>
+</main>
+
+    <footer>
+      <div data-include="components/footer.html"></div>
+    </footer>
+    <script>
+      document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+      document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+   </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/arrays.js"></script>
+</body>
+</html>
