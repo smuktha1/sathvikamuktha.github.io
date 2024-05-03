@@ -3,47 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sathvika Muktha's Sagacious Mermaid ITIS 3135 Calculator</title>
+  <title>Sathvika Muktha's Sagacious Mermaid ITIS 3135 Calculator try</title>
   <link rel="stylesheet" href="styles/default.css">
-  <link rel="stylesheet" href="styles/calculator_try.css">
-
   <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
 </head>
 <body>
   <header>
     <div data-include="components/header.html"></div>
   </header>
+    <main>
+      <h2>Caclutor try</h2>
+      <div class="calculator">
+        <input id="screen" type="text" readonly>
+        <div class="buttons">
+        <button onclick="clear()" class="btn-number">AC</button>
+        <button onclick="appendToDisplay('1')" class="btn-number">1</button>
+        <button onclick="appendToDisplay('2')" class="btn-number">2</button>
+        <button onclick="appendToDisplay('3')" class="btn-number">3</button>
+        <button onclick="appendToDisplay('4')" class="btn-number">4</button>
+        <button onclick="appendToDisplay('5')" class="btn-number">5</button>
+        <button onclick="appendToDisplay('6')" class="btn-number">6</button>
+        <button onclick="appendToDisplay('7')" class="btn-number">7</button>
+        <button onclick="appendToDisplay('8')" class="btn-number">8</button>
+        <button onclick="appendToDisplay('9')" class="btn-number">9</button>
+        <button onclick="appendToDisplay('0')" class="btn-number">0</button>
 
+        <button onclick="appendToDisplay('+')" class="sign">+</button>
+        <button onclick="appendToDisplay('-')" class="sign">-</button>
+        <button onclick="appendToDisplay('*')" class="sign">*</button>
+        <button onclick="appendToDisplay('/')" class="sign">/</button>
 
-   <main>
-        <h2>Calculator</h2>
-        <div class="calculator">
-            <div class="display">
-                <input type="text" id="result" disabled>
-            </div>
-            <div class="buttons">
-                <button class="btn" id="clear">C</button>
-                <button class="btn" id="clearEntry">CE</button>
-                <button class="btn operator" id="divide">/</button>
-                <button class="btn operator" id="multiply">*</button>
-                <button class="btn" id="seven">1</button>
-                <button class="btn" id="eight">2</button>
-                <button class="btn" id="nine">3</button>
-                <button class="btn operator" id="subtract">-</button>
-                <button class="btn" id="four">4</button>
-                <button class="btn" id="five">5</button>
-                <button class="btn" id="six">6</button>
-                <button class="btn operator" id="add">+</button>
-                <button class="btn" id="one">7</button>
-                <button class="btn" id="two">8</button>
-                <button class="btn" id="three">9</button>
-                <button class="btn equal" id="equal">=</button>
-                <button class="btn" id="zero">0</button>
-                <button class="btn" id="decimal">.</button>
-            </div>
-        </div>
+        <button onclick="calculate()" class="equal">=</button>
+
+    </div>
+    </div>
     </main>
-
     <footer>
       <div data-include="components/footer.html"></div>
     </footer>
@@ -54,6 +48,5 @@
    </script>
     <script src="scripts/HTMLInclude.min.js"></script>
     <script src="scripts/calculator_try.js"></script>
-
 </body>
 </html>
