@@ -96,3 +96,27 @@ butterfly{
     height: 24px;
     width: 25px;
 }
+
+/* slideshow */  
+.prev {
+    cursor: pointer;
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    width: auto;
+    padding: 7px;
+    margin-top: 30px;
+    color: goldenrod;
+    background-color:rgba(50, 9, 139, 0.721);
+}
+.next {
+    cursor: pointer;
+    position: absolute;
+    right: 120px;
+    top: 50%;
+    width: auto;
+    padding: 7px;
+    margin-top: 30px;
+    color: goldenrod;
+    background-color:rgba(50, 9, 139, 0.721);
+}
