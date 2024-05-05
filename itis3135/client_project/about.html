@@ -3,8 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TSO UNCC website || About</title>
+  <title>TSO UNCC website || E-Board Members</title>
   <link rel="stylesheet" href="styles/project.css">
+  <style>
+        * {
+        box-sizing: border-box;
+        }
+
+        .container {
+        position: relative;
+        border: #143601 15px solid;
+        text-align:left;
+        }
+
+        .slides {
+        display: none;
+        }
+
+        .cursor {
+        cursor: pointer;
+        }
+
+        .prev,
+        .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: #AAD576;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+        }
+
+        .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+        }
+
+        .prev{
+            left: 0;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background-color: #2a9134;
+        }
+
+        .numbertext {
+        color: #143601;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        padding-top: 4px;
+        }
+
+        .container {
+        text-align: center;
+        background-color: none;
+        padding: 2px 16px;
+        color: #2a9134;
+        }
+  </style>
 </head>
 
 <body>
@@ -12,7 +76,50 @@
     <div data-include="components/header.html"></div>
   </header>
   <main>
-    <h2>ABOUT US / WHO WE ARE</h2>
+    <h2>E-BOARD MEMBERS</h2>
+    
+    <div class="container">   
+    <!-- slide 1  -->
+    <div class="slides">
+      <div class="numbertext">1 / 5</div>
+      <img src="images/eboard.jpeg" style="width:50%" alt="slideshow">
+      <p><strong>Introducing our Executive Board Members of this year!</strong></p>
+    </div>
+    
+    <!-- slide 2  -->
+    <div class="slides" style="display: none;">
+      <div class="numbertext">2 / 5</div>
+      <img src="images/president.jpeg" style="width:50%" alt="slideshow">
+      <p><strong>President</strong></p>
+    </div>
+    
+    <!-- slide 3  -->
+    <div class="slides" style="display: none;">
+      <div class="numbertext">3 / 5</div>
+      <img src="images/event.jpeg" style="width:50%" alt="slideshow">
+      <p><strong>Event Coordinator</strong></p>
+    </div>
+    
+    <!-- slide 4  -->
+    <div class="slides" style="display: none;">
+      <div class="numbertext">4 / 5</div>
+      <img src="images/treasurer.jpeg" style="width:50%" alt="slideshow">
+      <p><strong>Treasurer</strong></p>
+    </div>
+    
+    <!-- slide 5  -->
+    <div class="slides" style="display: none;">
+      <div class="numbertext">5 / 5</div>
+      <img src="images/socialmedia.jpeg" style="width:50%" alt="slideshow">
+      <p><strong>Social Media Manager</strong></p>
+    </div>
+  
+    
+    <!-- cursor -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  
   </main>
   
   <footer>
@@ -25,5 +132,6 @@
       document.getElementById("validation_link_disability").setAttribute("href","https://wave.webaim.org/report#/" + location.href);
    </script>
     <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/slideshow.js"></script>
 </body>
 </html>
