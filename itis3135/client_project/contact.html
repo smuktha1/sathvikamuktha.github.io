@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TSO UNCC website || CONTANT</title>
+  <link rel="stylesheet" href="styles/project.css">
+</head>
+
+<body>
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+  <main>
+    <h2>CONTACT US</h2>
+    <p>Have a question or need assistance with on joining TSO? Get in touch with us using the form below:</p>
+    <section class="logo">
+    <!--Instagram Link with image-->
+    <a href="" alt="link-to-logo"><img src="./images/instagram.png" alt="insta" id="insta"></a>
+
+    <!--ninerengage Link with image-->
+    <a href="" alt="link-to-logo"><img src="./images/ninerengage.png" alt="ninerengage" id="ninerengage"></a>
+    </section>
+
+    <h3>Today is <span id="current-time"></span> </h3>
+    <form id="user-info">
+
+    <!--Contact form to reach out to TSO!-->
+    <section class="contact-form">
+        <h2>Send me a message</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+            <button type="submit" id="submit-btn">Submit</button>
+        </form>
+    </section>
+</fieldset>
+</main>
+  
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+
+    <script>
+      document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+      document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+      document.getElementById("validation_link_disability").setAttribute("href","https://wave.webaim.org/report#/" + location.href);
+   </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/project.js"></script>
+</body>
+</html>
