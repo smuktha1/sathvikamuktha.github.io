@@ -52,50 +52,8 @@ figure{
 }
 
 
-/* slideshow */
-/*
-.container {
-    position: relative;
-    top: 20px;
-    bottom: 40px;
-    max-width: 800px;
-    margin: auto;
-}
- 
-.slides {
-    display: none;
-    width: 100%;
-}
-img {
-    width: 100%;
-    height: auto;
-}
-.prev {
-    cursor: pointer;
-    position: absolute;
-    left: 250px;
-    top: 50%;
-    width: auto;
-    padding: 9px;
-    margin-top: 30px;
-    color: #DEF4C6;
-    background-color:#143601;
-}
-.next {
-    cursor: pointer;
-    position: absolute;
-    right: 150px;
-    top: 50%;
-    width: auto;
-    padding: 9px;
-    margin-top: 30px;
-    color: #DEF4C6;
-    background-color: #143601;
-} 
-*/
-
 /* Table Styling*/
-/*
+
 table{
     border-style: solid;
     border-collapse: collapse;
@@ -104,24 +62,22 @@ table{
     
 }  
 th, td {
-    
     text-align: left;
     padding: 10px;
     border: 2px solid black;
-    color: White;
+    color: #143601;
 }
 th{
-    background-color: rgba(255, 141, 160, 0.691);
-    color: darkblue;
+    background-color: #73A942;
+    color: #143601;
 }
 tr:nth-child(even) {
-    background-color:  rgba(126, 23, 142, 0.544);
+    background-color:  #AAD576;
 }
 
 tr:nth-child(odd) {
-    background-color: rgba(194, 87, 210, 0.754);
+    background-color: #DEF4C6;
 }
-*/
 
 /*Form Styling */
 
@@ -245,4 +201,70 @@ input[type="reset"]:hover {
     font-style: italic;
     font-size: 50px;
     text-align: center;
+}
+
+
+
+
+
+/* Shooting star animation */
+@keyframes shooting-star-top-left {
+    0% { right: 100%; top: 0; }
+    100% { right: 0%; top: 100%; }
+}
+
+@keyframes shooting-star-top-right {
+    0% { left: 100%; top: 0; }
+    100% { left: 0%; top: 100%; }
+}
+
+@keyframes shooting-star-bottom-left {
+    0% { right: 100%; bottom: 0; }
+    100% { right: 0%; bottom: 100%; }
+}
+
+@keyframes shooting-star-bottom-right {
+    0% { left: 100%; bottom: 0; }
+    100% { left: 0%; bottom: 100%; }
+}
+
+/* Shooting star animation */
+@keyframes shooting-star {
+    0% { transform: translate(-100%, -100%); opacity: 0; }
+    10% { opacity: 1; }
+    100% { transform: translate(100%, 100%); opacity: 0; }
+}
+
+.shooting-star {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, #143601 0%, #2a9134 100%);
+    animation: shooting-star 7s linear infinite;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+/* Individual shooting stars */
+#star1 {
+    top: 10%;
+    right: 0%;
+    animation-name: shooting-star-top-left;
+}
+
+#star2 {
+    top: 10%;
+    left: 0%;
+    animation-name: shooting-star-top-right;
+}
+
+#star3 {
+    bottom: 10%;
+    right: 0%;
+    animation-name: shooting-star-bottom-left;
+}
+
+#star4 {
+    bottom: 10%;
+    left: 0%;
+    animation-name: shooting-star-bottom-right;
 }
