@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tamil Student Organisation || Membership Form</title>
+  <link rel="stylesheet" href="styles/project.css">
+</head>
+
+<body>
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+
+  <main>
+    <h2>TSO Membership Form:</h2>
+    <h4>Please fill out this form with the required information</h4>
+
+
+    <form action="#" method="get">
+        
+      <div class="divider">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required size="30"><br>
+
+      <label for="phone">Student ID:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter Student ID " required size="15"><br>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Enter UNCC email ID" required size="30"><br>
+
+      <label>Do you speak Tamil?</label><br>
+      <input type="radio" id="yes" name="service-type" value="yes">
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="service-type" value="no">
+      <label for="no">No</label><br>
+    
+      
+      <label>How did you hear about us??</label><br>
+      <input type="checkbox" id="instagram" name="instagram" value="instagram">
+      <label for="instagram">Instagram</label><br>
+      <input type="checkbox" id="niner-engage" name="niner-emgage" value="niner-engage">
+      <label for="niner-engage">Niner Engage</label><br>
+      <input type="checkbox" id="soo" name="soo" value="soo">
+      <label for="soo">Student Organization Orientation</label><br>
+      <input type="checkbox" id="other" name="other" value="other">
+      <label for="other">Other</label><br>
+
+      <br>
+      
+      <div class="gender">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="usa">Male</option>
+            <option value="uk">Female</option>
+            <option value="canada">Other</option>
+            <option value="canada">Prefer not to say</option>
+        </select>
+      </div>
+
+      <input type="reset" value="Reset">
+      <input type="submit" value="Submit">
+      <br>
+      </div>
+    </form>
+  </main>
+
+      <br>
+    <footer>
+      <div data-include="components/footer.html"></div>
+    </footer>
+    <script>
+      document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+      document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+      document.getElementById("validation_link_disability").setAttribute("href","https://wave.webaim.org/report#/" + location.href);
+   </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+  
+</body>
+</html>

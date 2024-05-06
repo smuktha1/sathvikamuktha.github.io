@@ -9,9 +9,11 @@ a{
     color: rgb(237, 100, 162);
     text-decoration: none;
 }
+
 a:hover {
     color: rgba(127, 37, 211, 0.404);
 }
+
 main {
     text-align: left;
     margin-left: 20%;
@@ -34,6 +36,7 @@ figure{
     font-style:italic;
 
 }
+
 /* Table Styling*/
 table{
     border-style: solid;
