@@ -125,7 +125,7 @@ butterfly{
     color: goldenrod;
     background-color:rgba(50, 9, 139, 0.721);
 }
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
     h1, h2 {
         font-size: 35px;
     }
@@ -158,7 +158,7 @@ butterfly{
     img {
         max-width: 400px;
     }
-}
+} */
 
 @media screen and (max-width: 600px) {
     h1, h2 {
