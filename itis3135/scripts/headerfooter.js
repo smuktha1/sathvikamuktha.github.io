@@ -47,11 +47,11 @@ document.addEventListener("DOMContentLoaded", function() {
         menuItem.href = item.url;
 
         // Create and append the butterfly
-        const butterfly = document.createElement("img");
-        butterfly.src = "images/butterflyPNG.png";
-        favicon.alt = "butterfly";
-        butterfly.classList.add("butterfly");
-        menuItem.appendChild(butterfly)
+        // const butterfly = document.createElement("img");
+        // butterfly.src = "images/butterflyPNG.png";
+        // favicon.alt = "butterfly";
+        // butterfly.classList.add("butterfly");
+        // menuItem.appendChild(butterfly)
 
         return menuItem;
     }
