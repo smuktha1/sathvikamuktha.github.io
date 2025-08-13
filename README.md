@@ -1,3 +1,3 @@
 Designed and developed a fully functional webpage while learning essential programming concepts for creating interactive, user-friendly web-based applications using HTML, CSS, and JavaScript. Incorporated client-side scripting to enhance functionality and responsiveness, ensuring an engaging user experience. Applied best practices for web security, including input validation and protection against common vulnerabilities, to ensure the safety and integrity of the application. Gained practical experience in front-end development while focusing on creating scalable and accessible web solutions.
 
-Access at: (https://sathvikamuktha.github.io/itis3135/)
+Access at: (https://smuktha1.github.io/sathvikamuktha.github.io/itis3135/)
